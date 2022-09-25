@@ -1,0 +1,297 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block body %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="https://www.sukhbeerbrar.com/wp-content/uploads/2021/08/chrisheria.jpg" alt="Mohan" width="120">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="mohan">Mohan Kulapathi</h1>
+
+          <p class="title">Personal Trainer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">mohan@kulapathi.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <p class="contact-link">+91 927262919</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gold's gym, Bangalore</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+        
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Meet Mohan Kulapathi— a Health and Wellness expert based in Bangalore, with over 20 years of experience in the fitness industry.
+          </p>
+
+          <p>
+            When I was cut from a baseball team in school for being too weak, I read every fitness book and magazine that I could get my hands on.
+
+            I dedicated myself to a strict weightlifting routine and diet program. Funny thing is that by the time I was more than prepared for the team, I didn’t care about it anymore.
+            
+           <p> Transforming my own body made me realize what I really cared about was health, fitness, and helping people.
+
+            I graduated a year early from university with my Bachelor of Science degree in Kinesiology. I had also earned my personal training certifications ahead of schedule.
+
+            As I helped people achieve their fitness goals, I spent years honing my craft, mentoring with some of the most respected names in the industry, and attaining certifications in the following areas:
+
+            NSCA Certified Personal Trainer
+            NSCA Certified Strength and Conditioning Specialist
+            ACSM Certified Exercise Physiologist
+            Precision Nutrition Coach.
+          </p>
+          </p>
+        </section>
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I train in</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://i.pinimg.com/originals/02/5e/91/025e9125663fc9d61bb7acd91a1db527.gif" alt="design icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Muscle Building</h4>
+
+                <p class="service-item-text">
+                  There’s no secret formula. I lift heavy, work hard, and aim to be the best.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://i.pinimg.com/originals/39/2a/6f/392a6f876839df2145134158cac422d5.gif" alt="Web development icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Weight Loss</h4>
+
+                <p class="service-item-text">
+                    There is no such thing as over training, just under nutrition and under sleeping.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://i.pinimg.com/originals/5a/cc/f9/5accf9de526481c45c7d52120b697f03.gif" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Weight Gain</h4>
+
+                <p class="service-item-text">
+                  You WILL see your body change, I promise. Just stick with it.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://i.pinimg.com/originals/3c/29/a2/3c29a2031ac237521c36ade50910aa90.gif" alt="camera icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Overall Fitness</h4>
+
+                <p class="service-item-text">
+                    I'm not sold on one diet philosophy. I'm sold on whatever will work for you
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="training">
+
+          <h3 class="h3 training-title">My Training Vlogs</h3>
+
+          <ul class="training-list has-scrollbar">
+            <li class="training-item">
+              <div class="content-card" data-training-item>
+
+                <h4 class="h4 training-item-title" data-training-title>Weight Loss</h4>
+
+                <div class="training-text" data-training-text>
+                  <iframe width="360" height="200" src="https://www.youtube.com/embed/GT6LcZA5kiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="training-item">
+              <div class="content-card" data-training-item>
+                <h4 class="h4 training-item-title" data-training-title>Muscle Building</h4>
+
+                <div class="training-text" data-training-text>
+                  <iframe width="360" height="200" src="https://www.youtube.com/embed/7abF4V2XmXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="training-item">
+              <div class="content-card" data-training-item>
+
+
+                <h4 class="h4 training-item-title" data-training-title>Complete Abs Workout</h4>
+
+                <div class="training-text" data-training-text>
+                  <iframe width="360" height="200" src="https://www.youtube.com/embed/8PwoytUU06g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              </div>
+            </li>
+            <li class="training-item">
+              <div class="content-card" data-training-item>
+
+                <h4 class="h4 training-item-title" data-training-title>Cardio overall fitness</h4>
+
+                <div class="training-text" data-training-text>
+                  <iframe width="360" height="200" src="https://www.youtube.com/embed/czjJMxL3Xfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+      <script src="/static/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+{% endblock body %}

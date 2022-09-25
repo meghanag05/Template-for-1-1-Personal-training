@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block title %}Programs{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="my-4 text-center">Get started with your fitness journey with one of these programs!</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://source.unsplash.com/1200x900/?gyms" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <p class="card-text">Kickstart your fitness journey with a 4 week starter course!. This course is held
+            virtually and the timings are flexible too! Completely customizable according to your fitness needs.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              
+              <button type="button" class="btn btn-sm btn-outline-secondary"
+                onclick="window.location='register';">Register</button>
+          
+            </div>
+            <small class="text-muted">4 weeks | Rs. 800</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://source.unsplash.com/1200x900/?workout" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">A six week course with a deep dive into fitness. A leap into this course will help you go
+            a long way. A slightly longer period of time will help you get used to a new routine.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+       
+              <button type="button" class="btn btn-sm btn-outline-secondary"
+                onclick="window.location='register';">Register</button>
+       
+            </div>
+            <small class="text-muted">6 weeks | Rs. 1200</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="https://source.unsplash.com/1200x900/?gym" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">A three month subscription to fitness. With customizable routines and meal plans, 
+            this 3 month plan will certainly show your dedication towards achieving your fitness goal</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+           
+              <button type="button" class="btn btn-sm btn-outline-secondary"
+                onclick="window.location='register';">Register</button>
+           
+            </div>
+            <small class="text-muted">3 months | Rs. 4500</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+           <img src="https://source.unsplash.com/1200x900/?fitness" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">A subscription to half a year of planning and training. This will keep you motivated to go on
+                and achieve the goals you have set while not putting a strain on your mind. It's time to try this for yourself and get started!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                
+                  <button type="button" class="btn btn-sm btn-outline-secondary"
+                  onclick="window.location='register';">Register</button>
+                </div>
+                <small class="text-muted">6 months | Rs. 9000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+           <img src="https://source.unsplash.com/1200x900/?fit" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Dont want to commit to an entire year? No problem. This 9 month program is perfect for you! Try it out, see if it fits your schedule and make your year better by getting on the journey of being fit.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"
+                  onclick="window.location='register';">Register</button>
+                </div>
+                <small class="text-muted">9 months | Rs. 14000</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+           <img src="https://source.unsplash.com/1200x900/?yoga" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">More the commitment, more the results. Start your year of fitness by subscribing for a
+                whole year! A year of fitness with a personal trainer can go a very long way to maintain your fitness.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+              
+                  <button type="button" class="btn btn-sm btn-outline-secondary"
+                  onclick="window.location='register';">Register</button>
+                </div>
+                <small class="text-muted">1 year | Rs. 17500</small>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+{% endblock body %}
