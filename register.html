@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        .left{
+      background: url("https://media.istockphoto.com/photos/portrait-of-a-young-man-and-woman-working-out-in-a-gym-picture-id1359766322?b=1&k=20&m=1359766322&s=170667a&w=0&h=rOi0KYk74K7XbbdE9HCB7cZh8DyUSKXyPNIDOVYp9Ms=") no-repeat center;
+      background-size: cover;
+      height: 100%;
+      border-radius: 25px;
+    }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+                <h2 style="color:#fff">Register today!</h2>
+    <form method="post" action="/register">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="name" >Name</label>
+            <input type="text" style="width:600px" class="form-control" class="field" id="nam" name="nam" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-group">
+            <label for="mail">Email Address</label>
+            <input type="email" class="form-control" class="field" id="mail" name="mail" placeholder="Enter Your Email">
+        </div>
+        
+        <div class="form-group">
+            <label for="ph">Phone Number</label>
+            <input type="phone" class="form-control" class="field" id="ph" name="ph" placeholder="Enter Your Phone Number">
+        </div>      
+        
+        <div class="form-group">
+            <label for="prog">Choose your program</label>
+            <select style="width:600px; height: 40px;" id="prog" name="prog">
+                <option value="choose" selected>Choose a program</option>
+                <option value="4week">4 week program</option>
+                <option value="6week">6 week program</option>
+                <option value="3month">3 month program</option>
+                <option value="6month">6 month program</option>
+                <option value="9month">9 month program</option>
+                <option value="1year">1 year program</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="goal">What's your goal?</label>
+            <select style="width:600px; height: 40px;" id="prog" name="prog">
+                <option value="choose" selected>Choose a goal</option>
+                <option value="4week">Weight loss</option>
+                <option value="6week">Weight gain</option>
+                <option value="6month">Muscle building</option>
+                <option value="1year">Overall fitness</option>
+            </select>
+        </div>
+        <p>
+
+        </p>
+        
+        <button class="btn btn-primary" style="width:150px" type="submit">Register</button>
+    </form>
+</div>
+
+</div>
+</div>
+</body>
+{% endblock body %}
